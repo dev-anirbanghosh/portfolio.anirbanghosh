@@ -1,0 +1,276 @@
+@font-face {
+	font-display: swap;
+	font-family: 'Android Euclid';
+	font-style: normal;
+	font-weight: 500;
+	src: local("Android Euclid Medium"), local("Android-Euclid-Medium"), url("../fonts/AndroidEuclid-Medium-WebS.woff2") format("woff2")
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Android Euclid';
+	font-style: normal;
+	font-weight: 700;
+	src: local("Android Euclid Bold"), local("Android-Euclid-Bold"), url("../fonts/AndroidEuclid-Bold-WebS.woff2") format("woff2")
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v29-latin-regular.woff2") format("woff2")
+}
+
+:root {
+    --pf-font-1: "Roboto", Helvetica, Arial, sans-serif !important;
+	--pf-font-2: Android Euclid, Roboto, Helvetica, Arial, sans-serif;
+
+    --pf-bg-1: #4AC29A linear-gradient(to right, #BDFFF3, #4AC29A) no-repeat;
+    --pf-bg-2: linear-gradient(136deg,transparent,#71c7ee 290%),linear-gradient(115deg,#9d9af1,transparent 40%),linear-gradient(180deg,transparent 0,#1a68d3 70%),radial-gradient(ellipse at bottom,#1a68d3 40%,transparent 80%),radial-gradient(ellipse at 5% 340%,transparent 80%,#bfc2f4 0);
+
+    --pf-fs-1: 1rem;
+	--pf-fs-2: 1.25rem;
+	--pf-fs-3: 1.5rem;
+	--pf-fs-4: 2rem;
+    --pf-fs-5: 2.25rem;
+    --pf-fs-6: 2.5rem;
+    --pf-fs-7: 3rem;
+    --pf-fs-8: 3.5rem;
+    --pf-fs-9: 4.5rem;
+    --pf-fs-10: 5rem;
+    --pf-fs-11: 6.75rem;
+
+    --pf-lh-1: 4.375rem;
+	--pf-lh-2: 3.438rem;
+    --pf-lh-3: 2.25rem;
+	--pf-lh-4: 2rem;
+    --pf-lh-5: 1.75rem;
+	--pf-lh-6: 1.5rem;
+    --pf-lh-7: 1.25rem;
+    --pf-lh-8: 1rem;
+
+    --pf-color-1: #fff;
+    --pf-color-2: #000;
+    --pf-color-3: #1a68d3;
+    --pf-color-4: #f7f7f7;
+    --pf-color-5: #ebebeb;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden!important;
+}
+
+
+body {
+    font-family: var(--pf-font-1);
+}
+
+header, .pf_h1, .pf_h2, .pf_h5 {
+    font-family: var(--pf-font-2);
+}
+
+section {
+    overflow: hidden;
+}
+
+a, a:focus, a:hover, a:active {
+    text-decoration: none;
+}
+
+ul .dropdown-menu {
+    border: none;
+}
+
+.navbar {
+    box-shadow: none !important;
+}
+
+.navbar-scrolled {
+  background-color: var(--pf-color-1);
+  color: #000 !important;
+  box-shadow: 0 0.25rem 0.75rem 0 rgb(0 0 0 / 7%), 0 0.125rem 0.25rem rgb(0 0 0 / 5%) !important;
+}
+
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+    outline: 0;
+    border-color: transparent!important;
+    box-shadow: none;
+}
+
+.card {
+    cursor: pointer;
+    box-shadow: 0 0.063rem 1rem -0.75rem rgb(2 12 27 / 60%)
+}
+
+.card:hover {
+    transform: translateY(-0.313rem);
+}
+
+#pf_nav .navbar-brand {
+    color:  var(--pf-color-4);
+}
+
+#pf_nav .nav-link {
+    color: var(--pf-color-5);
+}
+
+#pf_nav .nav-link.active, #pf_nav .nav-link:hover {
+    color: var(--pf-color-1);
+    font-weight: 600;
+}
+
+.pf_ms1 .container {
+    min-height: 100vh;
+}
+
+.pf_ms2 .container {
+    min-height: 40vh;
+}
+
+.pf_ms1 {
+    background-color: #1a68d3;
+    background-image: var(--pf-bg-2);
+    color: var(--pf-color-4);
+}
+
+.pf_ms2 {
+    background-color: #113864;;
+    color: var(--pf-color-4);
+}
+
+.pf_h1 {
+	font-size: var(--pf-fs-2);
+	font-weight: 500;
+	letter-spacing: -0.03125rem;
+	line-height: var(--pf-lh-7);
+}
+
+.pf_h2 {
+	font-size: var(--pf-fs-9);
+	font-weight: 600;
+	letter-spacing: -0.125rem;
+	line-height: var(--pf-lh-1);
+}
+
+.pf_h3 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -.005em;
+    line-height: 1.1;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+}
+
+.pf_p1 {
+    line-height: var(--pf-lh-5);
+	font-size: var(--pf-fs-2);
+}
+
+.pf_p2 {
+    font-size: 1.25rem;
+    color: #4a4a4a;
+    line-height: 1.5rem;
+}
+
+.pf_i1 {
+    width:37.5rem;
+    height:37.5rem;
+}
+
+.pf_i2 {
+    width: 25rem;
+    height: 25rem;
+}
+
+.pf_ic1 {
+    font-size: 20rem;
+    color: #ffffff57
+}
+
+.pf_sp1 {
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 65%
+}
+
+.pf_skill_h1 {
+    margin-top: 6.25rem;
+}
+
+.pf_banner {
+    background-color: transparent;
+    border-radius: 40px;
+    position: relative;
+}
+
+.pf_banner1 {
+    min-height: 20rem;
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+    background-blend-mode: normal,color-burn;
+}
+
+.pf-fw-600 {
+    font-weight: 600;
+}
+
+.pf-dh1 {
+    min-height: 6rem;
+}
+
+@media (max-width: 575px) {
+
+    section {
+        padding: 1rem;
+    }
+    
+    .pf_h1 {
+        font-size: var(--pf-fs-2);
+    }
+
+    .pf_h2 {
+        font-size: var(--pf-fs-6);
+        line-height: 2.5rem;
+    }
+
+    .pf_p1 {
+        font-size: var(--pf-fs-1);
+        line-height: var(--pf-lh-6);
+    }
+
+    .pf_i1 {
+        width:18.75rem;
+        height:18.75rem;
+    }
+
+    .pf_ic1 {
+        font-size: 10rem;
+    }
+
+    .pf_sp1 {
+        position: absolute;
+        margin-top: 75%;
+        margin-left: 38%;
+    }
+
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
