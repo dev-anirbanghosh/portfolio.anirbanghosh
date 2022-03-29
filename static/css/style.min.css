@@ -318,7 +318,23 @@ button, button:focus, button:active  {
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    nav {
+        width: 100vw;
+    }
+
+    .pf_p2 {
+       font-size: 1.625rem;
+        line-height: 2rem;
+        width: 100% !important;
+        width: 100% !important;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+
+}
 
 @media (min-width: 992px) {}
 
