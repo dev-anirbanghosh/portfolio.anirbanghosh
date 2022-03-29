@@ -82,8 +82,18 @@ a, a:focus, a:hover, a:active {
     text-decoration: none;
 }
 
+a.text-muted:hover {
+    font-weight: 600;
+    color: #000!important;
+}
+
 ul .dropdown-menu {
     border: none;
+}
+
+button, button:focus, button:active  {
+    outline: none!important;
+    box-shadow: none!important
 }
 
 .navbar {
@@ -94,6 +104,14 @@ ul .dropdown-menu {
   background-color: var(--pf-color-1);
   color: #000 !important;
   box-shadow: 0 0.25rem 0.75rem 0 rgb(0 0 0 / 7%), 0 0.125rem 0.25rem rgb(0 0 0 / 5%) !important;
+}
+
+.navbar-scrolled * {
+    color: #5a5a5a !important;
+}
+
+.navbar-scrolled .nav-link.active {
+    color: #000 !important;
 }
 
 .navbar.navbar-scroll.navbar-scrolled {
@@ -109,7 +127,7 @@ ul .dropdown-menu {
 
 .card {
     cursor: pointer;
-    box-shadow: 0 0.063rem 1rem -0.75rem rgb(2 12 27 / 60%)
+    box-shadow: 0 0.063rem 1rem -0.75rem rgb(2 12 27 / 60%);
 }
 
 .card:hover {
@@ -146,6 +164,11 @@ ul .dropdown-menu {
 .pf_ms2 {
     background-color: #113864;;
     color: var(--pf-color-4);
+}
+
+.pf_ms6 {
+    min-height: 40vh;
+    background-color: #f8f9fa;;;
 }
 
 .pf_h1 {
@@ -219,12 +242,22 @@ ul .dropdown-menu {
     background-blend-mode: normal,color-burn;
 }
 
+.pf_banner2 {
+    min-height: 20rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
 .pf-fw-600 {
     font-weight: 600;
 }
 
 .pf-dh1 {
     min-height: 6rem;
+}
+
+.pf_more {
+    display: none;
 }
 
 @media (max-width: 575px) {
@@ -242,14 +275,32 @@ ul .dropdown-menu {
         line-height: 2.5rem;
     }
 
+    .pf_h3 {
+        font-size: 2rem;
+    }
+
+    .pf_h5 {
+        font-size: 0.875rem;
+    }
+
     .pf_p1 {
         font-size: var(--pf-fs-1);
         line-height: var(--pf-lh-6);
     }
 
+    .pf_p2 {
+       width: 100% !important;
+       font-size: 1.125rem;
+    }
+
     .pf_i1 {
         width:18.75rem;
         height:18.75rem;
+    }
+
+    .pf_i2 {
+        width: 20rem;
+        height: 20rem;
     }
 
     .pf_ic1 {
